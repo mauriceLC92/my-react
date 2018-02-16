@@ -37,10 +37,8 @@ export class App extends Component {
 
   resetRace = () =>{
     this.setState({run: false})
-    // this.setState({progress: 1})
   }
 
-// document.getElementsByClassName("progressBar").transition.duration = 50
   
 
   render() {
