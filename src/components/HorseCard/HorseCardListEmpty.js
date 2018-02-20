@@ -6,7 +6,7 @@ const HorseCardListEmpty = (props) =>{
             <i className="notched circle loading icon"></i>
             <div className="content">
                 <div className="header">
-                    Waiting to generate Horses
+                    Please Click 'Generate Horses' above
                 </div>
             </div>
         </div>
