@@ -30,8 +30,6 @@ export class App extends Component {
     this.setState({run: false})
   }
 
-  
-
   render() {
     return (
       <div className="App">
