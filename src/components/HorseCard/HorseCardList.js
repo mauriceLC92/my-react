@@ -11,7 +11,7 @@ const HorseCardList = (props) =>{
         horseLogin={horse.login}
         horseGitUrl={horse.html_url}
         />
-    ));
+      ));
 
     return(
         <div>
