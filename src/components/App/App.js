@@ -5,7 +5,7 @@ import logo from '../../images/logo.svg';
 import './App.css';
 import { EditableHorseList } from '../HorseCard/EditableHorseList';
 import { LeaderBoard } from '../Dashboard/LeaderBoard';
-import { RacetrackList } from '../RaceTrack/RacetrackList';
+import RacetrackList from '../RaceTrack/RacetrackList';
 
 export class App extends Component {
   constructor(props) {

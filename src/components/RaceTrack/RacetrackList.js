@@ -4,15 +4,12 @@ const ProgressBar = ({progress}) => (
     <div className="progressbar">
       <div className="progress" style={{ width: `${progress}%`, transitionDuration:`${progress*Math.floor(Math.random() * 100 +1)}ms` }}>
       </div>
+      
     </div>
   )
 
-
-export class RacetrackList extends React.Component{
-
-    render(){
-
-        if(this.props.run)
+const RacetrackList = (props) =>{
+    if(props.run)
         {
             return(
                 <ProgressBar
@@ -29,7 +26,6 @@ export class RacetrackList extends React.Component{
                 /* <div>Horses waiting to start</div> */
             )
         }
-            
-    }
 }
 
+export default RacetrackList;
