@@ -1,15 +1,14 @@
 import React from 'react';
 
-export class HorseCard extends React.Component{
-    render(){
-        return(
+const HorseCard = (props) => {
 
-            <div className='ui card'>
+    return(
+        <div className='ui card'>
                 <div className='ui small circular image' >
-                    <img src={this.props.horseAvatar} alt="github avatar"/>
+                    <img src={props.horseAvatar} alt="github avatar"/>
                 </div>
                 <div className='middle aligned content'>
-                    <a className='ui tiny header' href={this.props.horseGitUrl}>{this.props.horseLogin}</a>
+                    <a className='ui tiny header' href={props.horseGitUrl}>{props.horseLogin}</a>
                     {/* <div className='meta'>
                         <span className='description'> Race XP: 2 years</span>
                     </div> */}
@@ -24,6 +23,8 @@ export class HorseCard extends React.Component{
                     </a>
                 </div> */}
             </div>
-        );
-    }
-}
+    );
+
+};
+
+export default HorseCard;
