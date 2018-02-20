@@ -4,7 +4,6 @@ const ProgressBar = ({progress}) => (
     <div className="progressbar">
       <div className="progress" style={{ width: `${progress}%`, transitionDuration:`${progress*Math.floor(Math.random() * 100 +1)}ms` }}>
       </div>
-      
     </div>
   )
 
@@ -21,9 +20,7 @@ const Racetrack = (props) =>{
             return(
                 <ProgressBar
                 progress = {0}
-                
                  />
-                /* <div>Horses waiting to start</div> */
             )
         }
 }
