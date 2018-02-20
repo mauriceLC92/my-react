@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Racetrack } from "./Racetrack";
-
 const ProgressBar = ({progress}) => ( 
     <div className="progressbar">
       <div className="progress" style={{ width: `${progress}%`, transitionDuration:`${progress*Math.floor(Math.random() * 100 +1)}ms` }}>

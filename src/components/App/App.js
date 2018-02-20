@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import logo from '../../images/logo.svg';
-import {RaceDashboard} from '../Dashboard/RaceDashboard';
-import {HorseCard} from '../HorseCard/HorseCard';
-import {HorseCardList} from '../HorseCard/HorseCardList';
+
+
 import './App.css';
 import { EditableHorseList } from '../HorseCard/EditableHorseList';
-import {HorseCardListEmpty} from '../HorseCard/HorseCardListEmpty';
 import { LeaderBoard } from '../Dashboard/LeaderBoard';
-import { Racetrack } from '../RaceTrack/Racetrack';
 import { RacetrackList } from '../RaceTrack/RacetrackList';
 
 export class App extends Component {
