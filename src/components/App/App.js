@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from '../../images/logo.svg';
-
-
 import './App.css';
+
+import RandomTransitionTime from '../../utilities'
 import { EditableHorseList } from '../HorseCard/EditableHorseList';
 import { LeaderBoard } from '../Dashboard/LeaderBoard';
 import Racetrack from '../RaceTrack/RacetrackList';
@@ -16,6 +16,7 @@ export class App extends Component {
   
   renderHorseList = () => {
     this.setState({horseListEmpty: true});
+
   }
 
   clearHorseList = () => {
@@ -57,7 +58,7 @@ export class App extends Component {
             </div>
             <div className='column'>
               <div className="ui medium buttons">
-                  <button className="positive ui button" onClick={this.startRace}>Start Race</button>
+                  <button id="startButton" className="positive ui button" onClick={this.startRace}>Start Race</button>
                   <div className="or"></div>
                   <button className="negative ui button" onClick={this.resetRace}>Reset</button>
               </div>
@@ -71,19 +72,19 @@ export class App extends Component {
             <div className="raceTrack">
               <div className="track">
               {/* <ProgressBar progress={this.state.progress} /> */}
-              <Racetrack run = {this.state.run} />
+              <Racetrack run = {this.state.run} transitionDuration = {RandomTransitionTime}/>
               </div>
               <div className="track">
               {/* <ProgressBar progress={this.state.progress} /> */}
-              <Racetrack run = {this.state.run} />
+              <Racetrack run = {this.state.run} transitionDuration = {RandomTransitionTime} />
               </div>
               <div className="track">
               {/* <ProgressBar progress={this.state.progress} /> */}
-              <Racetrack run = {this.state.run}/>
+              <Racetrack run = {this.state.run} transitionDuration = {RandomTransitionTime}/>
               </div>
               <div className="track">
               {/* <ProgressBar progress={this.state.progress} /> */}
-              <Racetrack run = {this.state.run}/>
+              <Racetrack run = {this.state.run}transitionDuration = {RandomTransitionTime}/>
               </div>
             </div>
           </div>

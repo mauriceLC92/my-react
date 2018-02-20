@@ -1,11 +1,5 @@
 import React from 'react';
-
-const ProgressBar = ({progress}) => ( 
-    <div className="progressbar">
-      <div className="progress" style={{ width: `${progress}%`, transitionDuration:`${progress*Math.floor(Math.random() * 100)}ms` }}>
-      </div>
-    </div>
-  )
+import ProgressBar from './ProgressBar';
 
 const Racetrack = (props) =>{
     if(props.run)
@@ -13,6 +7,7 @@ const Racetrack = (props) =>{
             return(
                 <ProgressBar
                 progress = {100}
+                transitionDuration = {props.transitionDuration}
                  />
             );
         }
