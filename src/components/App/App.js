@@ -5,7 +5,7 @@ import logo from '../../images/logo.svg';
 import './App.css';
 import { EditableHorseList } from '../HorseCard/EditableHorseList';
 import { LeaderBoard } from '../Dashboard/LeaderBoard';
-import RacetrackList from '../RaceTrack/RacetrackList';
+import Racetrack from '../RaceTrack/RacetrackList';
 
 export class App extends Component {
   constructor(props) {
@@ -73,19 +73,19 @@ export class App extends Component {
             <div className="raceTrack">
               <div className="track">
               {/* <ProgressBar progress={this.state.progress} /> */}
-              <RacetrackList run = {this.state.run} />
+              <Racetrack run = {this.state.run} />
               </div>
               <div className="track">
               {/* <ProgressBar progress={this.state.progress} /> */}
-              <RacetrackList run = {this.state.run} />
+              <Racetrack run = {this.state.run} />
               </div>
               <div className="track">
               {/* <ProgressBar progress={this.state.progress} /> */}
-              <RacetrackList run = {this.state.run}/>
+              <Racetrack run = {this.state.run}/>
               </div>
               <div className="track">
               {/* <ProgressBar progress={this.state.progress} /> */}
-              <RacetrackList run = {this.state.run}/>
+              <Racetrack run = {this.state.run}/>
               </div>
             </div>
           </div>

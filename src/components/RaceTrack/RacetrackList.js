@@ -8,7 +8,7 @@ const ProgressBar = ({progress}) => (
     </div>
   )
 
-const RacetrackList = (props) =>{
+const Racetrack = (props) =>{
     if(props.run)
         {
             return(
@@ -28,4 +28,4 @@ const RacetrackList = (props) =>{
         }
 }
 
-export default RacetrackList;
+export default Racetrack;
