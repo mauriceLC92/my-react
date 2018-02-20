@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProgressBar = ({progress}) => ( 
     <div className="progressbar">
-      <div className="progress" style={{ width: `${progress}%`, transitionDuration:`${progress*Math.floor(Math.random() * 100 +1)}ms` }}>
+      <div className="progress" style={{ width: `${progress}%`, transitionDuration:`${progress*Math.floor(Math.random() * 100)}ms` }}>
       </div>
     </div>
   )
