@@ -1,5 +1,5 @@
 import React from 'react';
-import { HorseCardList } from './HorseCardList';
+import HorseCardList from './HorseCardList';
 import {HorseCardListEmpty} from './HorseCardListEmpty';
 
 export class EditableHorseList extends React.Component{

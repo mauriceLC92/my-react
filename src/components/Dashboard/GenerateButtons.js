@@ -1,5 +1,5 @@
 import React from 'react';
-import { HorseCardList } from '../HorseCard/HorseCardList';
+import HorseCardList from '../HorseCard/HorseCardList';
 import { HorseCardListEmpty } from '../HorseCard/HorseCardListEmpty';
 
 export class GenerateButtons extends React.Component{
