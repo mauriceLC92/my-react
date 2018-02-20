@@ -10,12 +10,6 @@ import { LeaderBoard } from '../Dashboard/LeaderBoard';
 import { Racetrack } from '../RaceTrack/Racetrack';
 import { RacetrackList } from '../RaceTrack/RacetrackList';
 
-const ProgressBar = ({progress}) => ( 
-  <div className="progressbar">
-    <div className="progress" style={{ width: `${progress}%`}}>
-    </div>
-  </div>
-)
 export class App extends Component {
   constructor(props) {
     super(props);

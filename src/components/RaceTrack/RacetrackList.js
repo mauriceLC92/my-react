@@ -8,6 +8,8 @@ const ProgressBar = ({progress}) => (
       </div>
     </div>
   )
+
+
 export class RacetrackList extends React.Component{
 
     render(){
@@ -17,7 +19,6 @@ export class RacetrackList extends React.Component{
             return(
                 <ProgressBar
                 progress = {100}
-            
                  />
             );
         }
@@ -25,6 +26,7 @@ export class RacetrackList extends React.Component{
             return(
                 <ProgressBar
                 progress = {0}
+                
                  />
                 /* <div>Horses waiting to start</div> */
             )
