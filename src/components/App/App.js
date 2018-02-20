@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../images/logo.svg';
+
 import './App.css';
 
 
@@ -8,6 +8,7 @@ import { LeaderBoard } from '../Dashboard/LeaderBoard';
 import Racetrack from '../RaceTrack/RacetrackList';
 import {StartAndStopButtons} from '../Dashboard/StartAndStopButtons';
 import {GenerateClearButtons} from '../Dashboard/GenerateClearButtons';
+import {Header} from '../Dashboard/Header';
 export class App extends Component {
   constructor(props) {
     super(props);
@@ -36,13 +37,7 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Kurtosys Horse Race Challenge</h1>
-        </header>
-        <div>
-        <i className="wheelchair icon"></i>...........................................KURTOSYS 1000M Pixel Dash.....................................<i className="wheelchair icon"></i>
-        </div>
+        <Header />
         <div className='ui four column grid'>
           <div className='row'>
             <div className='column'>
