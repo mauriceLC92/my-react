@@ -5,7 +5,7 @@ import './App.css';
 
 import { EditableHorseList } from '../HorseCard/EditableHorseList';
 import { LeaderBoard } from '../Dashboard/LeaderBoard';
-import Racetrack from '../RaceTrack/RacetrackList';
+import {Racetrack} from '../RaceTrack/RacetrackList';
 import {StartAndStopButtons} from '../Dashboard/StartAndStopButtons';
 import {GenerateClearButtons} from '../Dashboard/GenerateClearButtons';
 import {Header} from '../Dashboard/Header';

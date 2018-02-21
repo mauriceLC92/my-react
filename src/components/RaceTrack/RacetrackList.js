@@ -1,13 +1,17 @@
 import React from 'react';
-import ProgressBar from './ProgressBar';
+import {ProgressBar} from './ProgressBar';
 
-const Racetrack = (props) =>{
-    if(props.run)
+
+export class Racetrack extends React.Component{
+
+    render(){
+
+        if(this.props.run)
         {
             return(
                 <ProgressBar
                 progress = {100}
-                transitionDuration = {props.transitionDuration}
+                transitionDuration = {this.props.transitionDuration}
                  />
             );
         }
@@ -15,9 +19,32 @@ const Racetrack = (props) =>{
             return(
                 <ProgressBar
                 progress = {0}
+                
                  />
+                /* <div>Horses waiting to start</div> */
             )
         }
+            
+    }
 }
 
-export default Racetrack;
+// const Racetrack = (props) =>{
+//     if(props.run)
+//         {
+//             return(
+//                 <ProgressBar
+//                 progress = {100}
+//                 transitionDuration = {props.transitionDuration}
+//                  />
+//             );
+//         }
+//         else{
+//             return(
+//                 <ProgressBar
+//                 progress = {0}
+//                  />
+//             )
+//         }
+// }
+
+// export default Racetrack;
