@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Team from './teamdata';
+
 export class HorseCardListEmpty extends React.Component{
     render(){
         return(

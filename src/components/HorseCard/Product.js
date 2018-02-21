@@ -1,5 +1,6 @@
 import React from 'react';
-export class HorseCard extends React.Component{
+
+export class Product extends React.Component{
     render(){
         return(
             <div className='ui card'>
@@ -8,9 +9,9 @@ export class HorseCard extends React.Component{
                 </div>
                 <div className='middle aligned content'>
                     <a className='ui tiny header' href={this.props.horseGitUrl}>{this.props.horseLogin}</a>
-                    {/* <div className='meta'>
-                        <span className='description'> Race XP: 2 years</span>
-                    </div> */}
+                    <div className='meta'>
+                        <span className='description'> Race XP: 2 years>>>{this.props.transistion}</span>
+                    </div>
                     {/* <div className='description'>
                         Software developer: Implementation team
                     </div> */}
@@ -21,7 +22,6 @@ export class HorseCard extends React.Component{
                         2 wins
                     </a>
                 </div> */}
-                {this.props.transition}
             </div>
         );
     }

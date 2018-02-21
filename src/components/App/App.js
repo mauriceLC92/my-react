@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 import './App.css';
 
-
 import { EditableHorseList } from '../HorseCard/EditableHorseList';
 import { LeaderBoard } from '../Dashboard/LeaderBoard';
 import {Racetrack} from '../RaceTrack/RacetrackList';
 import {StartAndStopButtons} from '../Dashboard/StartAndStopButtons';
 import {GenerateClearButtons} from '../Dashboard/GenerateClearButtons';
 import {Header} from '../Dashboard/Header';
+import {ProductList} from '../HorseCard/ProductList';
 export class App extends Component {
   constructor(props) {
     super(props);
@@ -77,10 +77,11 @@ export class App extends Component {
               </div>
             </div>
           </div>
-          {/* <div className='column'>...
+           <div className='column'>...
           </div>
-          <div className='column'>...
-          </div> */}
+          <div className='column'>
+            ...
+          </div> 
         </div>
       </div>
     );
