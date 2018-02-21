@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import Team from './teamdata';
 export class HorseCardListEmpty extends React.Component{
     render(){
         return(
@@ -12,7 +12,9 @@ export class HorseCardListEmpty extends React.Component{
                     </div>
                 </div>
             </div>
-            
         );
     }
 }
+
+
+// const teams = Team.team[0];
