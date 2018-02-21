@@ -1,5 +1,5 @@
 import React from 'react';
-import HorseCard from './HorseCard';
+import {HorseCard} from './HorseCard';
 import horseCard from '../HorseCard/team.json'
 
 
