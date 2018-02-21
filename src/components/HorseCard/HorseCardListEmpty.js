@@ -8,7 +8,7 @@ export class HorseCardListEmpty extends React.Component{
                 <i className="notched circle loading icon"></i>
                 <div className="content">
                     <div className="header">
-                        Waiting to generate Horses
+                        Please click 'Generate Horses' button above
                     </div>
                 </div>
             </div>
