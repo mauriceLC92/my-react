@@ -7,7 +7,7 @@ import { LeaderBoard } from '../Dashboard/LeaderBoard';
 import {StartAndStopButtons} from '../Dashboard/StartAndStopButtons';
 import {GenerateClearButtons} from '../Dashboard/GenerateClearButtons';
 import {Header} from '../Dashboard/Header';
-import {EditableRaceTrack} from '../RaceTrack/EditableRaceTrack'
+import {EditableRaceTrack} from '../RaceTrack/EditableRaceTrack';
 
 
 export class App extends Component {
@@ -17,14 +17,6 @@ export class App extends Component {
 
   }
 
-  beginRace = () =>{
-    this.setState({beginRace: true})
-  }
-
-  clearRace = () =>{
-    this.setState({beginRace: false})
-  }
-  
   renderHorseList = () => {
     this.setState({horseListEmpty: true});
 
