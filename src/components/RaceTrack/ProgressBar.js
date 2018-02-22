@@ -1,7 +1,10 @@
 import React from 'react';
 
 export class ProgressBar extends React.Component{
+
+   
   render() {
+    console.log(this.props.winRace);
       return (
           <div className="progressbar">
               <div
@@ -12,13 +15,3 @@ export class ProgressBar extends React.Component{
       );
   }
 }
-
-
-// const ProgressBar = ({progress, transitionDuration}) => ( 
-//     <div className="progressbar">
-//       <div className="progress" style={{ width: `${progress}%`, transitionDuration:`${transitionDuration}ms` }}>
-//       </div>
-//     </div>
-//   )
-
-//   export default ProgressBar;

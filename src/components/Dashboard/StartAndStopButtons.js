@@ -22,9 +22,9 @@ export class StartAndStopButtons extends React.Component{
     render(){
         return(
             <div className="ui medium buttons">
-                  <button id="startButton" className="positive ui button" onClick={this.startRace}>Start Race</button>
+                  <button id="startButton" className="positive ui button" onClick={this.startRace}>Render Race Tracks</button>
                   <div className="or"></div>
-                  <button className="negative ui button" onClick={this.resetRace}>Reset</button>
+                  <button className="negative ui button" onClick={this.resetRace}>Clear Race Tracks</button>
             </div>
         );
     }

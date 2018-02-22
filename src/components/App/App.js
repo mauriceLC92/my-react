@@ -4,16 +4,25 @@ import './App.css';
 
 import { EditableHorseList } from '../HorseCard/EditableHorseList';
 import { LeaderBoard } from '../Dashboard/LeaderBoard';
-import {Racetrack} from '../RaceTrack/RacetrackList';
 import {StartAndStopButtons} from '../Dashboard/StartAndStopButtons';
 import {GenerateClearButtons} from '../Dashboard/GenerateClearButtons';
 import {Header} from '../Dashboard/Header';
-import {ProductList} from '../HorseCard/ProductList';
+import {EditableRaceTrack} from '../RaceTrack/EditableRaceTrack'
+
+
 export class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {horseListEmpty: false, run: false};
+    this.state = {horseListEmpty: false, run: false, beginRace: false};
 
+  }
+
+  beginRace = () =>{
+    this.setState({beginRace: true})
+  }
+
+  clearRace = () =>{
+    this.setState({beginRace: false})
   }
   
   renderHorseList = () => {
@@ -62,26 +71,13 @@ export class App extends Component {
               horseListEmpty={this.state.horseListEmpty} />
           </div>
           <div className='column'>
-            <div className="raceTrack">
-              <div className="track">
-              <Racetrack run = {this.state.run} transitionDuration = {Math.floor(Math.random() * 4000)}/>
-              </div>
-              <div className="track">
-              <Racetrack run = {this.state.run} transitionDuration = {Math.floor(Math.random() * 4000)} />
-              </div>
-              <div className="track">
-              <Racetrack run = {this.state.run} transitionDuration = {Math.floor(Math.random() * 4000)}/>
-              </div>
-              <div className="track">
-              <Racetrack run = {this.state.run} transitionDuration = {Math.floor(Math.random() * 4000)}/>
-              </div>
-            </div>
+            <EditableRaceTrack run = {this.state.run}/>
           </div>
-           <div className='column'>...
-          </div>
-          <div className='column'>
+           {/* <div className='column'>...
+          </div> */}
+          {/* <div className='column'>
             ...
-          </div> 
+          </div>  */}
         </div>
       </div>
     );

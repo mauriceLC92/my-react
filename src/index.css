@@ -6,7 +6,7 @@ body {
 
 .raceTrack{
   border: 1px;
-  border-style: solid;
+  /* border-style: solid; */
   /* width: 339px; */
   width: 1000px;
   height: 698.0625px;
@@ -22,6 +22,7 @@ body {
   height: 175px;
   border: 2px;
   border-style: solid;
+  background-color:#77D01F;
   /* background-color: #77D01F; */
 }
 
@@ -32,7 +33,6 @@ body {
   transition-duration: 1000ms;
   /* transition: all 0.8s; */
   height: 100%;
-  
 }
 
 .progressbar {
@@ -53,4 +53,8 @@ body {
 .raceTrack{
   height: 175px;
   width: 6;
+}
+
+.HorseList{
+  padding-top: 38px;
 }
