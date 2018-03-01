@@ -145,13 +145,13 @@ export class RaceTrackFull extends React.Component{
                         <Racetrack begin = {this.state.beginRace} transitionDuration = {transTime_1} win = {laneWinner}/>
                     </div>
                     <div className="track">             
-                        <Racetrack begin = {this.state.beginRace} transitionDuration = {transTime_2} win = {laneWinner}/>
+                        <Racetrack begin = {this.state.beginRace} transitionDuration = {transTime_2} />
                     </div>
                     <div className="track">     
-                        <Racetrack begin = {this.state.beginRace} transitionDuration = {transTime_3} win = {laneWinner}/>
+                        <Racetrack begin = {this.state.beginRace} transitionDuration = {transTime_3} />
                     </div>
                     <div className="track">
-                        <Racetrack begin = {this.state.beginRace} transitionDuration = {transTime_4} win = {laneWinner}/>
+                        <Racetrack begin = {this.state.beginRace} transitionDuration = {transTime_4} />
               </div>
             </div>
 

@@ -19,7 +19,7 @@ export class HorseCardList extends React.Component{
     render(){
         //This is where const horseComponents orgially was
         return(
-            <div class="HorseList">
+            <div className="HorseList">
                 {horseComponents[Math.floor(Math.random() * horseComponents.length +1)]}
                 {horseComponents[Math.floor(Math.random() * horseComponents.length +1)]}
                 {horseComponents[Math.floor(Math.random() * horseComponents.length +1)]}

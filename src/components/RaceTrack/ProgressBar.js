@@ -4,7 +4,9 @@ export class ProgressBar extends React.Component{
 
    
   render() {
-    console.log(this.props.winRace);
+
+
+        const lane_num = this.props.winRace;
       return (
           <div className="progressbar">
               <div
@@ -12,6 +14,8 @@ export class ProgressBar extends React.Component{
                   style={{ width: `${this.props.progress}%`, transitionDuration:`${this.props.transitionDuration}ms` }}
               />
           </div>
+
+          
       );
   }
 }

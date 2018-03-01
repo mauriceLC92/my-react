@@ -21,30 +21,9 @@ export class Racetrack extends React.Component{
                 progress = {0}
                 
                  />
-                /* <div>Horses waiting to start</div> */
             )
         }
             
     }
 }
 
-// const Racetrack = (props) =>{
-//     if(props.run)
-//         {
-//             return(
-//                 <ProgressBar
-//                 progress = {100}
-//                 transitionDuration = {props.transitionDuration}
-//                  />
-//             );
-//         }
-//         else{
-//             return(
-//                 <ProgressBar
-//                 progress = {0}
-//                  />
-//             )
-//         }
-// }
-
-// export default Racetrack;
